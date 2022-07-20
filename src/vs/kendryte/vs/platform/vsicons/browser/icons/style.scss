@@ -1,0 +1,71 @@
+.monaco-workbench {
+	.octicon[class^='octicon--vs-'],
+	.octicon[class*=' octicon--vs-'],
+	.visualstudio-icon,
+	.octicon-vs,
+	.vscode-icon {
+		&:before {
+			display: inline-block;
+			background-repeat: no-repeat;
+			background-size: contain;
+			content: ' ';
+			height: 1em;
+			width: 1em;
+		}
+	}
+
+	span.visualstudio-icon.icon,
+	span.vscode-icon.icon {
+		&::before {
+			display: block;
+		}
+	}
+}
+
+.monaco-workbench .octicon.octicon-vs {
+	font-family: initial !important;
+}
+
+@mixin create_code($name) {
+	.monaco-workbench .vscode-icon.#{$name}:before {
+		background-image: url("#{$name}.svg");
+
+		.vs-dark & {
+			background-image: url("#{$name}_inverse.svg");
+		}
+	}
+}
+
+@mixin create($name) {
+	.monaco-workbench .visualstudio-icon.#{$name}:before {
+		background-image: url("#{$name}.svg");
+
+		.vs-dark & {
+			background-image: url("#{$name}-dark.svg");
+		}
+	}
+	.monaco-workbench .octicon.octicon--vs-#{$name}:before,
+	.monaco-workbench .octicon.octicon-vs.#{$name}:before {
+		background-image: url("#{$name}.svg");
+
+		.vs-dark & {
+			background-image: url("#{$name}-dark.svg");
+		}
+	}
+}
+
+@include create('library');
+@include create('example');
+@include create('select');
+@include create('add-folder');
+@include create('add-add-folder');
+@include create('add-file');
+@include create('clear-window');
+@include create('browser-download');
+@include create('BuilderWhite');
+@include create('DownloadWhite');
+@include create_code('AddFile');
+@include create_code('AddFolder');
+@include create_code('checked');
+@include create_code('json');
+@include create_code('PreferencesEditor');

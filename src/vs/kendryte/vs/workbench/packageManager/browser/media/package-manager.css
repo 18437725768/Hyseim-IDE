@@ -1,0 +1,102 @@
+.monaco-workbench .activitybar > .content .monaco-action-bar .action-label.packageManager {
+	-webkit-mask: url('pacakge-manager.svg') no-repeat 50% 50%;
+	-webkit-mask-size: 21px;
+	display: none !important;
+}
+
+.monaco-workbench .part.sidebar .title-actions .open-markplace-icon {
+	background-image: url('open-market.svg');
+}
+
+.vs-dark > .monaco-workbench .part.sidebar .title-actions .open-markplace-icon {
+	background-image: url('open-market-dark.svg');
+}
+
+#package-manager {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow: auto;
+}
+
+#package-manager > .package-title-bar > h1 {
+	padding: 5px 12px;
+}
+
+#package-manager > .error-message,
+#package-manager > .error-message > * {
+	padding: 0 20px;
+	font-size: 28px;
+	line-height: 32px;
+	font-weight: bold;
+}
+
+#package-manager .package-item {
+	padding: 5px 12px;
+	line-height: initial;
+	height: initial;
+}
+
+#package-manager .package-item > .title {
+	display: flex;
+	flex-direction: row;
+	font-size: 28px;
+	line-height: 28px;
+}
+
+#package-manager .package-item > .title > .h {
+	flex: 1;
+}
+
+#package-manager .package-item > .title > .icon {
+	margin-right: 4px;
+}
+
+#package-manager .package-item > .title > .icon.custom {
+	height: 1em;
+	width: 1em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+
+#package-manager .package-item > .actions {
+	display: flex;
+	flex-direction: row;
+}
+
+#package-manager .package-item > .desc {
+	line-height: 1.1em;
+	height: 3.3em;
+	padding: 3px 5px;
+	overflow: hidden;
+	white-space: pre-wrap;
+}
+
+#package-manager .package-item > .actions > .monaco-select-box {
+	width: 28em;
+	padding: 4px 16px;
+	margin-right: 3px;
+}
+
+#package-manager .package-item > .actions > .monaco-button {
+	padding: 4px 16px;
+	margin-right: 12px;
+}
+
+#package-manager .pm-navbar {
+	display: flex;
+	flex-direction: row;
+}
+
+#package-manager .pm-navbar > .search {
+	width: 240px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin-right: 24px;
+}
+
+#package-manager .pm-navbar > .navbar {
+	flex-grow: 1;
+}

@@ -1,0 +1,7 @@
+This Software is developed based on Visual Studio Code. Code and Image other than the ones from Visual Studio Code belong to Hyseim.
+
+## Visual Studio Code:
+[MIT](https://github.com/Microsoft/vscode/blob/master/LICENSE.txt)
+
+## Visual Studio 2017 Image Library:
+[Microsoft Software License Terms](http://download.microsoft.com/download/0/6/0/0607D8EA-9BB7-440B-A36A-A24EB8C9C67E/Visual%20Studio%202017%20Image%20Library%20EULA.RTF)
