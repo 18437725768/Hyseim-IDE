@@ -173,14 +173,14 @@ import { IJSONContributionRegistry, Extensions as JSONExtensions } from 'vs/plat
 		order: 3
 	});
 
-	MenuRegistry.appendMenuItem(MenuId.MenubarHelpMenu, {
-		group: '3_feedback',
-		command: {
-			id: 'workbench.action.openIssueReporter',
-			title: nls.localize({ key: 'miReportIssue', comment: ['&& denotes a mnemonic', 'Translate this to "Report Issue in English" in all languages please!'] }, "Report &&Issue")
-		},
-		order: 3
-	});
+	// MenuRegistry.appendMenuItem(MenuId.MenubarHelpMenu, {
+	// 	group: '3_feedback',
+	// 	command: {
+	// 		id: 'workbench.action.openIssueReporter',
+	// 		title: nls.localize({ key: 'miReportIssue', comment: ['&& denotes a mnemonic', 'Translate this to "Report Issue in English" in all languages please!'] }, "Report &&Issue")
+	// 	},
+	// 	order: 3
+	// });
 
 	// Tools
 	MenuRegistry.appendMenuItem(MenuId.MenubarHelpMenu, {

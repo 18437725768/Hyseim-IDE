@@ -306,7 +306,7 @@ export class Menubar {
 
 		// Build
 		const buildMenu = new Menu();
-		const buildMenuItem = new MenuItem({ label: this.mnemonicLabel(nls.localize({ key: 'mBuild', comment: ['&& denotes a mnemonic'] }, "&&Build")), submenu: projectMenu });
+		const buildMenuItem = new MenuItem({ label: this.mnemonicLabel(nls.localize({ key: 'mBuild', comment: ['&& denotes a mnemonic'] }, "&&Build")), submenu: buildMenu });
 
 		this.setMenuById(buildMenu, 'Build');
 		menubar.append(buildMenuItem);
@@ -320,7 +320,7 @@ export class Menubar {
 
 		// Debug
 		const debugMenu = new Menu();
-		const debugMenuItem = new MenuItem({ label: this.mnemonicLabel(nls.localize({ key: 'mDebug', comment: ['&& denotes a mnemonic'] }, "&&Debug")), submenu: projectMenu });
+		const debugMenuItem = new MenuItem({ label: this.mnemonicLabel(nls.localize({ key: 'mDebug', comment: ['&& denotes a mnemonic'] }, "&&Debug")), submenu: debugMenu });
 
 		this.setMenuById(debugMenu, 'Debug');
 		menubar.append(debugMenuItem);

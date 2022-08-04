@@ -210,7 +210,7 @@ class NativeDialogService implements IDialogService {
 	}
 
 	async about(): Promise<void> {
-		let version = product.version + '-0.004';
+		let version = product.version + '-0.005';
 		if (product.target) {
 			version = `${version} (${product.target} setup)`;
 		}

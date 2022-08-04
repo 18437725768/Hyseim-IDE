@@ -32,7 +32,7 @@ abstract class MaixSerialRebootActionBase extends Action {
 	}
 
 	async real_run(report: IProgress<IProgressStep>, token: CancellationToken): Promise<void> {
-		this.logger.clear();
+		// this.logger.clear();
 		await this.serialPortService.refreshDevices();
 		const sel = this.serialPortService.lastSelect || await this.serialPortService.quickOpenDevice();
 		if (!sel) {

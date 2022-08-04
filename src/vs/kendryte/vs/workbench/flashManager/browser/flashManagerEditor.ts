@@ -214,7 +214,6 @@ export class FlashManagerEditor extends AbstractJsonEditor<IFlashManagerConfigJs
 	}
 
 	private async saveAndRun(commandId: string) {
-
 		if (!this._input) {
 			this.notificationService.error('Flash section definitions file did not exists.');
 			return;

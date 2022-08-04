@@ -46,6 +46,8 @@ import 'vs/kendryte/vs/workbench/serialUpload/node/uploadContribution';
 import 'vs/kendryte/vs/workbench/serialMonitor/electron-browser/serialMonitorPanel';
 import 'vs/kendryte/vs/workbench/serialMonitor/common/toggleSerialMonitorAction';
 import 'vs/kendryte/vs/workbench/serialMonitor/electron-browser/actions/register';
+//build
+import 'vs/kendryte/vs/workbench/topMenu/electron-browser/buildMenuContribution';
 // app top menus
 import 'vs/kendryte/vs/workbench/topMenu/electron-browser/kendryteMenuContribution';
 import 'vs/kendryte/vs/workbench/topMenu/node/shortcutsContribution';

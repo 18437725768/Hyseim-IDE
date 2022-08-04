@@ -1,4 +1,4 @@
- /*---------------------------------------------------------------------------------------------
+/*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
@@ -252,6 +252,14 @@ export function packageLocalExtensionsStream(): NodeJS.ReadWriteStream {
 
 export function packageMarketplaceExtensionsStream(): NodeJS.ReadWriteStream {
 	const extensions = builtInExtensions.map(extension => {
+		if (extension.name === 'ms-vscode.references-view') {
+			fancyLog('Process cached builtin extension:', ansiColors.yellow(`${extension.name}@${extension.version}`), '...');
+
+			const extensionPath = path.join(root, '.build/builtInExtensions/ms-vscode.references-view');
+			return fromLocal(extensionPath)
+				.pipe(rename(p => p.dirname = `extensions/${extension.name}/${p.dirname}`));
+		}
+
 		return fromMarketplace(extension.name, extension.version, extension.metadata)
 			.pipe(rename(p => p.dirname = `extensions/${extension.name}/${p.dirname}`));
 	});

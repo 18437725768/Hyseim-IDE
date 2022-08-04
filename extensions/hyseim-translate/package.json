@@ -1,0 +1,32 @@
+{
+	"name": "hyseim-translate",
+	"displayName": "Chinese (Simplified) Language Pack for Hyseim IDE",
+	"description": "Hyseim IDE Chinese (Simplified)",
+	"version": "1.0.0",
+	"publisher": "hyseim",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.30.0"
+	},
+	"icon": "languagepack.png",
+	"categories": [
+		"Language Packs"
+	],
+	"contributes": {
+		"localizations": [
+			{
+				"languageId": "zh-cn",
+				"languageName": "Chinese Simplified",
+				"localizedLanguageName": "中文(简体)",
+				"translations": [
+					{
+						"id": "hyseim",
+						"path": "./translations/hyseim_zh-cn.i18n.json"
+					}
+				]
+			}
+		]
+	},
+	"scripts": {
+	}
+}

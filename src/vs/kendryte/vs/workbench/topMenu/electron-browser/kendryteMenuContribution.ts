@@ -1,7 +1,6 @@
 import { MenuId, MenuRegistry } from 'vs/platform/actions/common/actions';
-import { ApplicationMenuStructure, MyMenu, MyMenuRegistry, MyMenuSeparator, MySubMenu, ApplicationMenuStructure1 }
+import { ApplicationMenuStructure, MyMenu, MyMenuRegistry, MyMenuSeparator, MySubMenu }
 	from 'vs/kendryte/vs/base/common/menu/kendryteMenuDefine';
-
 let lastMenuId = 5000;
 
 function createMenu(s: MyMenuRegistry, parent: MenuId) {
@@ -34,4 +33,3 @@ function createMenu(s: MyMenuRegistry, parent: MenuId) {
 }
 
 createMenu(ApplicationMenuStructure, MenuId.MenubarMaixMenu);
-createMenu(ApplicationMenuStructure1, MenuId.MenubarBuildMenu);

@@ -1,0 +1,500 @@
+{
+    "version": "-1",
+    "contents": {
+        "vs/kendryte/vs/workbench/serialMonitor/common/configContribution": {
+            "serialport.baudrate.monitor": "Monitor Baudrate",
+            "serialport.baudrate.monitor.desc": "Default baudrate to use when connect to new serial port."
+        },
+        "vs/kendryte/vs/workbench/serialUpload/common/configContribution": {
+            "serialport.baudrate.flash": "Flash Baudrate",
+            "serialport.baudrate.flash.desc": "Flasher baudrate."
+        },
+        "vs/kendryte/vs/platform/openocd/common/openocd": {
+            "custom": "Custom",
+            "openocd.use.jtag": "use JTag interface",
+            "openocd.use.ftdi": "use FTDI interface",
+            "openocd.use.custom": "do not use bundled config file, write your own at \"{0}\" below"
+        },
+        "vs/kendryte/vs/workbench/fpioaConfig/electron-browser/fpioaContribution": {
+            "fpioa.editor.label": "fpioa Editor"
+        },
+        "vs/kendryte/vs/workbench/flashManager/electron-browser/flashManagerContribution": {
+            "flashManager": "Flash Manager"
+        },
+        "vs/kendryte/vs/services/serialPort/common/configContribution": {
+            "serialport.config.filter-empty": "Filter Empty Devices"
+        },
+        "vs/kendryte/vs/services/serialPort/common/reloadAction": {
+            "serialport.reloadDevice.title": "Reload device list"
+        },
+        "vs/kendryte/vs/workbench/serialMonitor/electron-browser/serialMonitorPanel": {
+            "reload_devices": "Reload Devices",
+            "serial-port.open.termial": "Open serial terminal",
+            "serial-port.open.raw": "Open raw terminal",
+            "serial-port.close": "Close port",
+            "press.ctrl.enter": "Press {0}+Enter to send data."
+        },
+        "vs/kendryte/vs/workbench/serialMonitor/common/toggleSerialMonitorAction": {
+            "serialport.togglePanel.title": "Toggle Serial Monitor"
+        },
+        "vs/kendryte/vs/workbench/topMenu/node/shortcutsContribution": {
+            "kendryte": "Kendryte"
+        },
+        "vs/kendryte/vs/workbench/cmake/electron-browser/cmakeContribution": {
+            "kendryte": "Kendryte"
+        },
+        "vs/kendryte/vs/workbench/bottomBar/common/kendryteButtonContribution": {
+            "cmake": "CMake",
+            "cmakeErrorUnknown": "Click to view CMake logs...",
+            "cmakeNeedOpenFolder": "Please open any folder to continue...",
+            "cmakeNeedProject": "Click to create hello world project..."
+        },
+        "vs/kendryte/vs/workbench/packageManager/electron-browser/mainPanelContribution": {
+            "packageManager": "Package Manager",
+            "package": "Package"
+        },
+        "vs/kendryte/vs/workbench/bootstrap/common/kendryteBootstrap": {
+            "bootstrap.kendryte.fatal": "Something goes wrong when starting Kendryte IDE: {0}"
+        },
+        "vs/kendryte/vs/workbench/jsonGUIEditor/editor/common/actionId": {
+            "editJson": "Edit JSON",
+            "editUI": "Open UI"
+        },
+        "vs/kendryte/vs/base/common/configKeys": {
+            "kendryte": "Kendryte",
+            "build": "Build",
+            "debug": "Debug",
+            "openocd": "OpenOCD",
+            "jtag": "JLink",
+            "ftdi": "FTDI",
+            "custom": "Custom",
+            "deploy": "Deploy",
+            "cmake.build.verbose.lbl": "Verbose build",
+            "cmake.build.verbose.desc": "Verbose log when run build",
+            "cmake.debug.lbl": "Debug CMake output",
+            "cmake.debug.desc": "Super verbose cmake output, for debug only",
+            "debug.openocd.config": "select how openocd is configured",
+            "debug.openocd.port": "openocd listen port, 0 means auto select",
+            "debug.openocd.core": "which core to debug, -1 means all core",
+            "debug.openocd.extraArgs": "extra arguments passing to openocd executable",
+            "debug.jtag.id.desc": "Serial number of JLink device, 0 means use first available.",
+            "debug.jtag.speed.desc": "khz",
+            "debug.ftdi.speed.desc": "khz",
+            "debug.ftdi.vid_pid.desc": "FTDI USB device VID PID value (two HEX string, eg: \"1a2b 3c4d\")",
+            "debug.ftdi.layout.desc": "layout init value (two HEX string, eg: \"1a2b 3c4d\")",
+            "debug.ftdi.tdo-fe.desc": "ftdi_tdo_sample_edge value",
+            "debug.ftdi.extra.desc": "extra config sections",
+            "debug.custom.desc": "custom openocd config file",
+            "debug.common.filter-empty.desc": "Filter out device without productID"
+        },
+        "vs/kendryte/vs/base/common/jsonComments": {
+            "jsonsParseReportErrors": "Failed to parse {0}: {1}."
+        },
+        "vs/kendryte/vs/base/common/speedShow": {
+            "kendryte.download.message": "Complete: {0} {1} Speed@ {2}"
+        },
+        "vs/kendryte/vs/workbench/fpioaConfig/electron-browser/fpioaEditorInput": {
+            "fpioaEditorInputName": "fpioa Config",
+            "alert": "Alert",
+            "io.select.overwrite.alert": "Reassign {0} \"{1}\" from {2} \"{3}\" to {4} \"{5}\"?",
+            "yes": "Yes",
+            "cancel": "Cancel",
+            "function": "function",
+            "pin": "pin"
+        },
+        "vs/kendryte/vs/base/common/menu/tools": {
+            "tools": "Tools",
+            "CreateShortcuts": "Create Shortcuts",
+            "KendryteIOEditor": "Edit Kendryte IO function",
+            "OpenDeviceManager": "Edit Devices",
+            "OpenFlashManager": "Flash Editor",
+            "OpenProjectSettings": "Project settings"
+        },
+        "vs/kendryte/vs/base/common/jsonSchemas/flashSectionsSchema": {
+            "flashManagerSchema": "Flash Manager"
+        },
+        "vs/kendryte/vs/workbench/flashManager/node/flashManagerService": {
+            "cppErrorFlashManager": "There are error(s) in flash manager, please fix them before compile"
+        },
+        "vs/kendryte/vs/workbench/flashManager/common/editorInput": {
+            "editingFile": "editing {0}",
+            "fileNotExists": "cannot read file: {0}",
+            "fileSelect": "Please select file for : {0}",
+            "filesMayLarge": "Total size larger than {0}"
+        },
+        "vs/kendryte/vs/workbench/flashManager/browser/flashManagerEditor": {
+            "addFile": "Add file...",
+            "createZip": "Create Zip",
+            "createZipDesc": "Create K-Flash package (.kfpkg) file from listed file",
+            "createZipWithProgram": "Create zip (with program)",
+            "uploadAll": "Upload all files",
+            "informationMessage": "{0} files, {1} data, write flash: {2} to {3}"
+        },
+        "vs/kendryte/vs/workbench/flashManager/node/createZipAction": {
+            "createZipFile": "Creating zip file...",
+            "noSection": "No file to falsh...",
+            "successCreateFile": "Successful create zip file: {0}.",
+            "building": "Building program..."
+        },
+        "vs/kendryte/vs/workbench/flashManager/common/type": {
+            "flashManagerEditor": "Flash manager",
+            "uploadAllFiles": "Upload all files",
+            "createZip": "Create zip with program"
+        },
+        "vs/kendryte/vs/base/common/menu/serialPort": {
+            "serialport": "Serial Port",
+            "upload": "Upload",
+            "and": "{0} and {1}",
+            "reboot": "Reboot",
+            "reboot.to.ISP.mode": "Reboot to ISP mode",
+            "kendryte.serial-port.default": "Click to select default serial port for flasher"
+        },
+        "vs/kendryte/vs/workbench/serialMonitor/electron-browser/serialDeviceList": {
+            "settingsListLabel": "Settings"
+        },
+        "vs/kendryte/vs/workbench/serialMonitor/electron-browser/outputWindow": {
+            "terminal.integrated.copySelection.noSelection": "The terminal has no selection to copy"
+        },
+        "vs/kendryte/vs/workbench/serialMonitor/common/actionId": {
+            "kendryte.serial.terminal.toggle": "Toggle serial monitor visible",
+            "kendryte.serial.terminal.toggle.left": "Toggle device list visible",
+            "kendryte.serial.terminal.toggle.right": "Toggle config visible"
+        },
+        "vs/kendryte/vs/workbench/serialMonitor/electron-browser/actions/acceptSerialInput": {
+            "actions.serial-port.acceptInput": "Serial Monitor Accept Input"
+        },
+        "vs/kendryte/vs/workbench/cmake/common/type": {
+            "ErrorNotProject": "This is not a cmake project."
+        },
+        "vs/kendryte/vs/workbench/cmake/electron-browser/cmakeService": {
+            "errorCMakeExit": "CMake command failed with {0}",
+            "errorCMakeCrash": "cmake process crashing",
+            "pleaseConfigureProject": "Please fix your project settings.",
+            "errorBuildErrorCode": "make failed with code {0}",
+            "errorNoVariant": "No build variant named: {0}",
+            "errorNoOutputBinary": "can not find an executable item"
+        },
+        "vs/kendryte/vs/workbench/cmake/electron-browser/actions/selectTargetAction": {
+            "SelectTarget": "Select Target"
+        },
+        "vs/kendryte/vs/workbench/cmake/electron-browser/actions/selectVariantAction": {
+            "SelectVariant": "Select Variant"
+        },
+        "vs/kendryte/vs/workbench/cmake/electron-browser/actions/openLocalCMakeList": {
+            "open": "Open {1}"
+        },
+        "vs/kendryte/vs/base/common/jsonSchemas/cmakeConfigSchema": {
+            "cmake": "CMake"
+        },
+        "vs/kendryte/vs/base/common/menu/cmake": {
+            "and": "{0} and {1}",
+            "build": "Build",
+            "debug": "Debug",
+            "show.log.cmake": "Click to show CMake log.",
+            "cleanup": "Cleanup",
+            "configure": "Configure",
+            "run": "Run",
+            "no.error": "CMake status OK!"
+        },
+        "vs/kendryte/vs/services/workspace/electron-browser/selectProjectAction": {
+            "library": "Library",
+            "executable": "Executable",
+            "notProject": "Non project",
+            "folder": "Folder: {0}",
+            "selectFolder": "Select working folder"
+        },
+        "vs/kendryte/vs/services/makefileService/common/type": {
+            "createMakefile": "Create CMakeLists.txt"
+        },
+        "vs/kendryte/vs/services/workspace/common/actionId": {
+            "selectProjectToBuild": "Select folder to use"
+        },
+        "vs/kendryte/vs/workbench/cmake/common/errors": {
+            "kendryte.errors.cmake.folder.not.open": "Open any project to start",
+            "kendryte.errors.cmake.project.not.exists": "Create {0} to start a project",
+            "kendryte.errors.cmake.project.invalid": "Errors in {0}",
+            "kendryte.errors.cmake.lists.txt.exists": "CMakeLists.txt will be override, please remove it first"
+        },
+        "vs/kendryte/vs/workbench/cmake/common/actionIds": {
+            "kendryte.cmake.create.hello-world": "Create a \"Hello World\" project"
+        },
+        "vs/kendryte/vs/workbench/packageManager/browser/actions/openPackagesMarketPlaceAction": {
+            "openMarketPlaceExample": "Find an examples"
+        },
+        "vs/kendryte/vs/workbench/packageManager/browser/actions/displayPackageDetailAction": {
+            "openurl.package.homepage": "Open Package Homepage"
+        },
+        "vs/kendryte/vs/workbench/packageManager/browser/actions/installDependencyAction": {
+            "installSuccess": "All dependencies successfully installed.",
+            "installFail": "Install failed: {0}",
+            "installSuccessProject": "Project dependencies successfully installed.",
+            "selectVersion": "Select version to install"
+        },
+        "vs/kendryte/vs/base/common/menu/packageManager": {
+            "packageManager": "Package Manager",
+            "openMarketPlace": "Explore online packages",
+            "InstallAllDependencies": "Install all dependencies",
+            "InstallProjectDependencies": "Install dependencies for current project",
+            "DeleteDependency": "Delete dependency"
+        },
+        "vs/kendryte/vs/workbench/packageManager/common/type": {
+            "packageManager": "Package Manager"
+        },
+        "vs/kendryte/vs/workbench/packageManager/browser/viewletPanels/register": {
+            "package list": "Package List",
+            "config": "Config"
+        },
+        "vs/kendryte/vs/workbench/packageManager/browser/editors/packageDetail": {
+            "name": "Package name",
+            "version": "Package Version",
+            "no.description": "No description",
+            "not.install": "Not Installed",
+            "local.package": "Local package",
+            "ReinstallDependency": "Reinstall package",
+            "InstallDependency": "Install package",
+            "open.homepage": "Open homepage"
+        },
+        "vs/kendryte/vs/workbench/packageManager/browser/editors/packageBrowser": {
+            "packages.browser": "Package Browser",
+            "packageManager.search": "Search package",
+            "library": "Library",
+            "example": "Example"
+        },
+        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/kendrytePackageJsonEditor": {
+            "kendrytePackageJsonEditor.type.title": "Project type",
+            "kendrytePackageJsonEditor.type.desc": "Type of your project. Warning: change this will clear others settings.",
+            "kendrytePackageJsonEditor.name.title": "Project name",
+            "kendrytePackageJsonEditor.name.desc": "Title of your project. Only a-z, 0-9, -, _ are allowed.",
+            "required": "Required",
+            "kendrytePackageJsonEditor.version.title": "Current version",
+            "kendrytePackageJsonEditor.version.desc": "Apply when publish.",
+            "kendrytePackageJsonEditor.homepage.title": "Homepage",
+            "kendrytePackageJsonEditor.homepage.desc": "A link to your project home (eg. github page).",
+            "kendrytePackageJsonEditor.header.title": "Headers directory",
+            "kendrytePackageJsonEditor.header.desc": "You can use #include from these folders in your code. One folder per line. Relative to this {0} file",
+            "kendrytePackageJsonEditor.source.title": "Source files",
+            "kendrytePackageJsonEditor.source.desc": "Source files to compile. One file/folder per line.",
+            "kendrytePackageJsonEditor.source.placeholder": "path/to/code.c - directly add a file.\npath/*.c - match all .c file in this folder.\npath/**.c - also recursive subfolders.",
+            "kendrytePackageJsonEditor.c_flags.title": "Arguments for gcc",
+            "kendrytePackageJsonEditor.c_flags.desc": "one argument per line",
+            "kendrytePackageJsonEditor.cpp_flags.title": "Arguments for g++",
+            "kendrytePackageJsonEditor.cpp_flags.desc": "one argument per line",
+            "kendrytePackageJsonEditor.c_cpp_flags.title": "Arguments for both gcc and g++",
+            "kendrytePackageJsonEditor.c_cpp_flags.desc": "one argument per line",
+            "kendrytePackageJsonEditor.link_flags.title": "Arguments for ld",
+            "kendrytePackageJsonEditor.link_flags.desc": "one argument per line",
+            "kendrytePackageJsonEditor.ld_file.title": "LD file path",
+            "kendrytePackageJsonEditor.ld_file.desc": "Use another LD file",
+            "kendrytePackageJsonEditor.entry.title": "Entry file",
+            "kendrytePackageJsonEditor.entry.desc": "Commonly used in a demo project.",
+            "kendrytePackageJsonEditor.definitions.title": "C/C++ Definitions",
+            "kendrytePackageJsonEditor.definitions.desc": "User configurable definitions, will create #define in compile time.",
+            "kendrytePackageJsonEditor.include.title": "Include root",
+            "kendrytePackageJsonEditor.include.desc": "User can #include your header from these folders. But recommended use only one folder, and no other source inside it.",
+            "kendrytePackageJsonEditor.prebuilt.title": "Prebuilt library file",
+            "kendrytePackageJsonEditor.prebuilt.desc": "If your library is not open source, assign the pre compiled .a file here.",
+            "kendrytePackageJsonEditor.exampleSource.title": "Examples",
+            "kendrytePackageJsonEditor.exampleSource.desc": "You can add example in your library (example is a folder contains {0}, and it's project type is executable).",
+            "kendrytePackageJsonEditor.properties.title": "CMake properties",
+            "kendrytePackageJsonEditor.properties.desc": "Please check CMake manual to get more information",
+            "kendrytePackageJsonEditor.extraList.title": "Prepend raw cmake lists",
+            "kendrytePackageJsonEditor.extraList.desc": "This file's content will add into generated cmakelist, note that you cannot use compile target, because it did not created.",
+            "kendrytePackageJsonEditor.extraList.placeholder": "Do not use this in most project.",
+            "kendrytePackageJsonEditor.dependency.title": "Project dependencies",
+            "kendrytePackageJsonEditor.dependency.desc": "One package per line"
+        },
+        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/kendrytePackageJsonEditorInput": {
+            "kendrytePackageJson.editor.description.long": "Configure CMake settings for {1} project",
+            "kendrytePackageJson.editor.description.long_for": "Configure CMake settings for this project",
+            "kendrytePackageJson.editor.description.medium_for": "Project {0} settings",
+            "kendrytePackageJson.editor.description.medium": "Current project settings"
+        },
+        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/openPackageJsonEditorAction": {
+            "workspace.required": "You must open source folder to do that."
+        },
+        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/common/ids": {
+            "kendrytePackageJsonEditor": "Configure"
+        },
+        "vs/kendryte/vs/base/common/menu/openocd": {
+            "openocd": "OpenOCD",
+            "jtag": "JLink",
+            "openocd.action.start": "Start openocd server",
+            "openocd.action.stop": "Stop openocd server",
+            "openocd.action.restart": "Restart openocd server",
+            "jtag.action.detect": "Detect connected JTag ids",
+            "jtag.action.install.libusb": "Install LibUSB driver",
+            "jtag.action.install": "Restore jlink driver"
+        },
+        "vs/kendryte/vs/services/openocd/electron-browser/actions/jtagBase": {
+            "leanHow": "Learn how to install JLink driver.",
+            "detail": "Show Detail",
+            "never again": "Don't Show Again"
+        },
+        "vs/kendryte/vs/services/openocd/electron-browser/actions/jtagFindId": {
+            "detail": "Show Detail"
+        },
+        "vs/kendryte/vs/workbench/actionRegistry/common/openDevToolsAction": {
+            "openDevTools": "Open Developer Tools"
+        },
+        "vs/kendryte/vs/base/common/menu/webLink": {
+            "weblink": "External Link",
+            "openocd.action.weblink.forum": "Open Forum",
+            "openocd.action.weblink.document": "Visit Online Document"
+        },
+        "vs/kendryte/vs/platform/fileDialog/common/configKeys": {
+            "file-dialog.types.source": "Source file extensions",
+            "file-dialog.types.source.desc": "Filter file name when finding source file from directory, separate by \";\"."
+        },
+        "vs/kendryte/vs/platform/menubar/electron-main/aboutMenuDialog": {
+            "myAboutDetail": "VS Code: {0}\nKendryte IDE: {1}\nCommit: {2}\nElectron: {4}\nChrome: {5}\nNode.js: {6}\nV8: {7}\nArchitecture: {8}",
+            "okButton": "OK",
+            "copy": "&&Copy"
+        },
+        "vs/kendryte/vs/workbench/fpioaConfig/electron-browser/editor/leftPanel": {
+            "settingsListLabel": "Settings"
+        },
+        "vs/kendryte/vs/workbench/flashManager/common/editorModel": {
+            "fileNotFound": "File not exists: \"{0}\""
+        },
+        "vs/kendryte/vs/workbench/flashManager/browser/list": {
+            "invalidName": "Invalid name, must match: {0}",
+            "invalidAddress": "Invalid address, must match: {0}",
+            "invalidAddressAlign": "Flash address must be divisible by {0}",
+            "noteAddressProgram": "Note: remember to verify your program binary size",
+            "filenameEmpty": "File is required",
+            "nameLabel": "Section name: ",
+            "namePlaceholder": "Reference name",
+            "swapLabel": "Swap bytes",
+            "addressLabel": "Flash address: ",
+            "addressPlaceholder": "Flash address",
+            "auto": "Auto determine",
+            "addressEndLabel": "End: ",
+            "fileLabel": "File path:",
+            "open": "Open file...",
+            "selectTitle": "Select file to flash",
+            "errorOutside": "Must select files inside project root."
+        },
+        "vs/kendryte/vs/platform/serialPort/flasher/node/flasher": {
+            "serial.memory.writing": "Writing Memory @ {0}",
+            "serial.flash.writing": "Writing Flash @ {0}"
+        },
+        "vs/kendryte/vs/workbench/serialMonitor/common/schema": {
+            "hexLineFeed.title": "Hex Mode Use LF",
+            "hexLineFeed.desc": "(When charset=hex) Do not dump \\n character",
+            "dataBits.title": "Data Bits",
+            "dataBits.desc": "Serial port data bits",
+            "stopBits.title": "Stop Bits",
+            "stopBits.desc": "Serial port stop bits",
+            "parity.title": "Parity",
+            "parity.desc": "Serial port parity",
+            "outputCharset.title": "Output Charset",
+            "outputCharset.desc": "Transform device output before print out",
+            "charset.binary": "binary: Device output is ANSI",
+            "charset.utf8": "utf8: Device output is UTF-8",
+            "charset.hex": "hex: Device output is binary, print as HEX",
+            "charset.hexasc": "hexasc: Device output is HEX string, transform to ANSI",
+            "inputCharset.title": "Input Charset",
+            "inputCharset.desc": "Transform your input before send to device",
+            "lineEnding.title": "Input Line Ending",
+            "lineEnding.desc": "(Raw mode only) Append character after your input",
+            "escape.title": "Escape",
+            "escape.desc": "(Raw mode only) Enable input escape, eg: \"\\n\" will transform to 0x0A",
+            "echo.title": "Echo",
+            "echo.desc": "Echo back what you type",
+            "translateLineFeed.title": "Translate Output LF",
+            "translateLineFeed.desc": "When receive these character(s), print a new line"
+        },
+        "vs/kendryte/vs/base/common/menu/processTool": {
+            "developerTools": "IDE Debug Tools",
+            "openocd.action.report": "Generate Help Data",
+            "openocd.action.relaunch": "Restart IDE",
+            "reloadWindow": "Reload Window",
+            "openocd.action.quit-and-update": "Quit and open updater"
+        },
+        "vs/kendryte/vs/platform/open/common/actionIds": {
+            "kendryte.open": "Open",
+            "workbench.action.kendryte.open.terminal": "Open System Terminal"
+        },
+        "vs/kendryte/vs/workbench/cmake/common/launchConfig": {
+            "workspace": "workspace"
+        },
+        "vs/kendryte/vs/services/makefileService/node/resolve": {
+            "loopDetected": "Loop detected in: {0}"
+        },
+        "vs/kendryte/vs/workbench/packageManager/browser/viewletPanels/localPackagesListView": {
+            "detail": "Detail",
+            "packages": "Packages"
+        },
+        "vs/kendryte/vs/workbench/packageManager/browser/viewletPanels/packageConfigView": {
+            "leave.empty.to.use.default": "Leave empty to use the default value",
+            "dependency tree": "Dependency Tree"
+        },
+        "vs/kendryte/vs/workbench/packageManager/browser/editors/remotePackagesListView": {
+            "detail": "Detail",
+            "installing": "Installing...",
+            "download": "Download",
+            "selectVersion": "Select Version"
+        },
+        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/sectionFactory": {
+            "library": "Library",
+            "prebuilt library": "Prebuilt library",
+            "executable": "Executable"
+        },
+        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/fields/sourceFileList": {
+            "addFile": "Add files...",
+            "addFileTreeDesc": "Add all files from specified folder, recursively...",
+            "addFileAll": "Add folders...",
+            "addFileTree": "Add tree..."
+        },
+        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/fields/singleFile": {
+            "addFileSingle": "Select file..."
+        },
+        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/fields/folderList": {
+            "addFolder": "Add folders..."
+        },
+        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/fields/singleFolder": {
+            "addFolderSingle": "Select folder..."
+        },
+        "vs/kendryte/vs/base/electron-browser/rawClipboardAction": {
+            "copy": "Copy"
+        },
+        "vs/kendryte/vs/workbench/fpioaConfig/electron-browser/editor/left/chipSelectView": {
+            "alert": "Alert",
+            "chip.select.overwrite.alert": "Your pin config will lost. Are you sure?"
+        },
+        "vs/kendryte/vs/workbench/fpioaConfig/electron-browser/editor/contextMenu": {
+            "KendryteIOEditorSetPinFunc": "assign function to selected io pin",
+            "KendryteIOEditorSetPinFuncShort": "Assign Function",
+            "KendryteIOEditorUnsetPinFunc": "No Function"
+        },
+        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/node/validators": {
+            "error.empty": "This is required",
+            "error.project-name.invalid": "Invalid project name",
+            "error.version.invalid": "Invalid version string, must be: x.y.z[-aaa]",
+            "error.url.invalid": "Invalid homepage url, must start with http(s)://",
+            "error.folder.invalid": "Not a folder: {0}",
+            "error.folder.nf": "Not found folder: {0}",
+            "error.file.invalid": "Not a file: {0}",
+            "error.file.nf": "Not found file: {0}",
+            "error.arg.list": "Invalid line: {0}. Must match: {1}"
+        },
+        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/fields/base": {
+            "select": "select ",
+            "add": "Add"
+        },
+        "vs/kendryte/vs/platform/fileDialog/common/sourceFile": {
+            "sourceFilesType": "Source files"
+        },
+        "vs/platform/menubar/electron-main/menubar": {
+            "mProject": "&&Project",
+            "mBuild": "&&Build"
+        },
+        "vs/workbench/browser/parts/titlebar/menubarControl": {
+            "mProject": "&&Project",
+            "mBuild": "&&Build"
+        },
+        "vs/workbench/electron-browser/desktop.contribution": {
+            "miSaveWorkspaceAs": "Save Workspace As..."
+        }
+    }
+}

@@ -7,7 +7,6 @@ import { createDecorator } from 'vs/platform/instantiation/common/instantiation'
 import { CancellationToken, CancellationTokenSource } from 'vs/base/common/cancellation';
 import { toDisposable, DisposableStore, Disposable } from 'vs/base/common/lifecycle';
 import { IAction } from 'vs/base/common/actions';
-
 export const IProgressService = createDecorator<IProgressService>('progressService');
 
 /**
@@ -18,6 +17,7 @@ export interface IProgressService {
 	_serviceBrand: undefined;
 
 	withProgress<R = any>(options: IProgressOptions | IProgressNotificationOptions | IProgressCompositeOptions, task: (progress: IProgress<IProgressStep>) => Promise<R>, onDidCancel?: () => void): Promise<R>;
+
 }
 
 export interface IProgressIndicator {
