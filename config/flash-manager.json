@@ -1,0 +1,18 @@
+{
+    "$schema": "vscode://schemas/flasher",
+    "downloadSections": [
+        {
+            "id": "1660130609448",
+            "filesize": 0,
+            "name": "NEW_FILE_1",
+            "address": "???",
+            "autoAddress": true,
+            "filename": "build/a.bin",
+            "addressEnd": "0xD000",
+            "swapBytes": true
+        }
+    ],
+    "baseAddress": "0",
+    "totalSize": 0,
+    "endAddress": "0x0"
+}

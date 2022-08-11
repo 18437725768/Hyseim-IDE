@@ -63,7 +63,7 @@ start "zadig" /D ${JSON.stringify(dirname(zadigExe))} /WAIT ${JSON.stringify(zad
 
 			this.notificationService.info('ZADIG Program exit. Note: You may need un-plug and plug again.');
 		} else {
-			await this.electronService.openExternal(URL_INSTALL_JLINK_DRIVER);
+			await this.electronService.openExternal(URL_INSTALL_JLINK_DRIVER);                                                                                                                                                         
 		}
 	}
 

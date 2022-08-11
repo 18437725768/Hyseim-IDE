@@ -71,11 +71,7 @@ if (locale) {
 	nlsConfigurationPromise = lp.getNLSConfiguration(product.commit, userDataPath, metaDataFile, locale);
 }
 
-
 // Load our code once ready
-//cacheData目录准备好后，
-//通过AMD loader加载main process入口文件out / vs / code / electron - main / main.js，
-//进入main process初始化流程
 app.once('ready', function () {
 	if (args['trace']) {
 		// @ts-ignore
@@ -237,7 +233,8 @@ function createDefaultArgvConfigSync(argvConfigPath) {
 			'{',
 			'	// Enabled by default by VSCode to resolve color issues in the renderer',
 			'	// See https://github.com/Microsoft/vscode/issues/51791 for details',
-			'	"disable-color-correct-rendering": true'
+			'	"disable-color-correct-rendering": true,',
+			'	"locale": "zh-cn"'
 		];
 
 		if (legacyLocale) {

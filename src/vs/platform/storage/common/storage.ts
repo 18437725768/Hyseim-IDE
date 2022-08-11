@@ -157,7 +157,7 @@ export class InMemoryStorageService extends Disposable implements IStorageServic
 			return fallbackValue;
 		}
 
-		return value === 'true';
+		return value === 'true';                                                                                                                                                                                                                                                                       
 	}
 
 	getNumber(key: string, scope: StorageScope, fallbackValue: number): number;

@@ -129,11 +129,10 @@ gulp.task(task.define('vscode-win32-ia32-archive', task.series(util.rimraf(zipDi
 gulp.task(task.define('vscode-win32-x64-archive', task.series(util.rimraf(zipDir('x64')), archiveWin32Setup('x64'))));
 
 function copyInnoUpdater(arch) {
-	const toolsPath = path.join(buildPath(arch), 'tools');
-	fs.mkdirSync(toolsPath, { recursive: true });
-	return gulp.src('build/win32/{inno_updater.exe,vcruntime140.dll}', { base: 'build/win32' })
-		.pipe(vfs.dest(toolsPath));
-
+	return () => {
+		return gulp.src('build/win32/{inno_updater.exe,vcruntime140.dll}', { base: 'build/win32' })
+			.pipe(vfs.dest(path.join(buildPath(arch), 'tools')));
+	};
 }
 
 function updateIcon(executablePath) {

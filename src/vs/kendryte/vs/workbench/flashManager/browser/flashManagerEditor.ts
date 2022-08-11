@@ -78,13 +78,13 @@ export class FlashManagerEditor extends AbstractJsonEditor<IFlashManagerConfigJs
 	}
 
 	protected async updateModel(model?: IJsonEditorModel<IFlashManagerConfigJson>) {
-		if (!model) {
-			this.sectionList.splice(0, this.sectionList.length);
-			this.btnAddFile.enabled = false;
-			this.btnFlashAll.enabled = false;
+		// if (!model) {
+		// 	this.sectionList.splice(0, this.sectionList.length);
+		// 	this.btnAddFile.enabled = false;
+		// 	this.btnFlashAll.enabled = false;
 
-			return;
-		}
+		// 	return;
+		// }
 		const input = this._input!;
 
 		this.render.setNewRoot(input.rootPath);
@@ -173,7 +173,6 @@ export class FlashManagerEditor extends AbstractJsonEditor<IFlashManagerConfigJs
 		this._register(attachButtonStyler(addButton, this.themeService));
 		append(addButton.element, vscodeIcon('AddFile'));
 		append(addButton.element, $('span')).textContent = localize('addFile', 'Add file...');
-
 		this._register(addButton.onDidClick(() => {
 			// Note: this implies new item is always the last one. | or it will destroy next item | onUpdate => splice(end, 1, [newOne])
 			this._input!.createNewSection();
@@ -272,7 +271,7 @@ export class FlashManagerEditor extends AbstractJsonEditor<IFlashManagerConfigJs
 	private refreshFullList() {
 		this.sectionList.splice(0, this.sectionList.length, this._input!.sliceData());
 
-		// this.btnAddFile.enabled = true;
+		this.btnAddFile.enabled = true;
 	}
 
 	private onMoveItem(index1: number, index2: any) {

@@ -496,6 +496,9 @@
             "mProject": "项目(&&P)",
             "mBuild": "构建(&&B)"
         },
+		"vs/workbench/contrib/extensions/browser/extensions.contribution": {
+			"extensions": "扩展"
+		},
         "vs/workbench/electron-browser/desktop.contribution": {
             "miSaveWorkspaceAs": "将工作区另存为..."
         }
