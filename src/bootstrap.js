@@ -7,7 +7,7 @@
 'use strict';
 
 // @ts-ignore
-kendryteExtend();
+hyseimExtend();
 
 //#region global bootstrapping
 
@@ -317,8 +317,8 @@ exports.avoidMonkeyPatchFromAppInsights = function () {
 };
 //#endregion
 
-function kendryteExtend() {
-	process.stderr.isTTY && console.error('bootstrap: kendryte-extend');
+function hyseimExtend() {
+	process.stderr.isTTY && console.error('bootstrap: hyseim-extend');
 
 	try {
 		// @ts-ignore
@@ -332,7 +332,7 @@ function kendryteExtend() {
 			setTimeout(() => {
 				// renderer process title seems strange, overwrite it to prevent error
 				const title = process.title.replace(/[^a-z0-9!"#$%&'()*+,.\/:;<=>?@\[\] ^_`{|}~-]/ig, '');
-				process.title = title || 'KendryteIDE-render';
+				process.title = title || 'HyseimIDE-render';
 			}, 1000);
 		});
 	} else {

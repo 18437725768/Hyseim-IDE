@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		"lib": [
+			"es5",
+			"es6",
+			"es7",
+			"esnext"
+		],
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"preserveConstEnums": true,
+		"target": "esnext",
+		"declaration": false,
+		"sourceMap": true,
+		"experimentalDecorators": true,
+		"noEmitOnError": false,
+		"pretty": true,
+		"outDir": "../.debugging",
+		"typeRoots": [
+			"../node_modules",
+			"../node_modules/@types",
+			"../../node_modules",
+			"../../node_modules/@types"
+		],
+		"types": [
+			"vscode",
+			"node"
+		]
+	},
+	"exclude": [
+		"node_modules"
+	],
+	"include": [
+		"**/*.ts"
+	]
+}

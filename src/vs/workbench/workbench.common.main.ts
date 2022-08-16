@@ -254,5 +254,5 @@ import 'vs/workbench/contrib/userDataSync/browser/userDataSync.contribution';
 
 //#endregion
 
-// kendryte
-import 'vs/kendryte/workbench.main';
+// hyseim
+import 'vs/hyseim/workbench.main';

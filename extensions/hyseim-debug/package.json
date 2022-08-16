@@ -1,0 +1,132 @@
+{
+  "name": "k-debug",
+  "displayName": "Hyseim Debug",
+  "description": "Hyseim GDB Debugger support for VSCode",
+  "keywords": [
+    "Hyseim",
+    "gdb",
+    "debug"
+  ],
+  "version": "0.22.0",
+  "publisher": "hyseim",
+  "main": "./frontend/extension",
+  "activationEvents": [
+    "*",
+    "onDebug",
+    "onCommand:hyseim-debug.examineMemoryLocation",
+    "onCommand:hyseim-debug.runWithoutDebug",
+    "onCommand:hyseim-debug.getFileNameNoExt",
+    "onCommand:hyseim-debug.getFileBasenameNoExt"
+  ],
+  "categories": [
+    "Debuggers"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyseim/hyseim-ide.git"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "hyseim-debug.examineMemoryLocation",
+        "title": "hyseim-debug: Examine memory location"
+      }
+    ],
+    "debuggers": [
+      {
+        "type": "hyseim",
+        "extensions": [],
+        "program": "./backend/backend.loader.js",
+        "runtime": "node",
+        "label": "Hyseim",
+        "enableBreakpointsFor": {
+          "languageIds": [
+            "c",
+            "cpp",
+            "asm"
+          ]
+        },
+        "configurationAttributes": {
+          "launch": {
+            "required": [
+              "target"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "ID of this config"
+              },
+              "executable": {
+                "type": "string",
+                "description": "Path of executable"
+              },
+              "target": {
+                "type": "string",
+                "description": "openocd server ip port"
+              },
+              "gdbpath": {
+                "type": "string",
+                "description": "gdb working directory"
+              },
+              "cwd": {
+                "type": "string",
+                "description": "gdb working directory"
+              },
+              "debuggerArgs": {
+                "type": "array",
+                "description": "Additional arguments to pass to GDB",
+                "default": []
+              },
+              "autorun": {
+                "type": "array",
+                "description": "GDB commands to run when starting to debug",
+                "default": []
+              },
+              "env": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "initialConfigurations": [
+          {
+            "id": "hyseim",
+            "name": "Hyseim Debug",
+            "type": "hyseim",
+            "cwd": "${workspaceRoot}/build",
+            "valuesFormatting": "parseText"
+          }
+        ],
+        "configurationSnippets": [
+          {
+            "label": "Hyseim: Debug Program",
+            "description": "Debug program with OpenOCD",
+            "body": {
+              "type": "hyseim",
+              "name": "${2:Hyseim Debug}",
+              "target": "${1:DefaultProjectName}",
+              "cwd": "^\"\\${workspaceRoot}/build\"",
+              "valuesFormatting": "parseText"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "engines": {
+    "vscode": ">=1.29.0"
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "start": "tsc -watch -p ./",
+    "prestart": "rm -rf .debugging ; mkdir -p .debugging ; ln -s ../package.json ./.debugging/package.json"
+  },
+  "dependencies": {
+    "source-map-support": "^0.5.12",
+    "split2": "^3.1.1",
+    "vscode-debugadapter": "^1.34.0",
+    "vscode-debugprotocol": "^1.34.0",
+    "vscode-nls": "^4.1.0"
+  },
+  "devDependencies": {}
+}

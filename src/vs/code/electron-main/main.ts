@@ -42,7 +42,7 @@ import { once } from 'vs/base/common/functional';
 import { ISignService } from 'vs/platform/sign/common/sign';
 import { SignService } from 'vs/platform/sign/node/signService';
 import { DiagnosticsService } from 'vs/platform/diagnostics/node/diagnosticsIpc';
-import 'vs/kendryte/vs/code/code.main';
+import 'vs/hyseim/vs/code/code.main';
 
 class ExpectedError extends Error {
 	readonly isExpected = true;

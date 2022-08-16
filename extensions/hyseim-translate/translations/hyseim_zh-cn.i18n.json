@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
     "contents": {
-        "vs/kendryte/vs/base/common/configKeys": {
+        "vs/hyseim/vs/base/common/configKeys": {
             "build": "构建",
             "cmake.build.verbose.desc": "构建让CMake显示全部输出",
             "cmake.build.verbose.lbl": "详细构建日志",
@@ -28,16 +28,16 @@
             "hyseim": "海芯",
             "openocd": "OpenOCD"
         },
-        "vs/kendryte/vs/base/common/jsonComments": {
+        "vs/hyseim/vs/base/common/jsonComments": {
             "jsonsParseReportErrors": "无法解析{0}，因为：{1}"
         },
-        "vs/kendryte/vs/base/common/jsonSchemas/cmakeConfigSchema": {
+        "vs/hyseim/vs/base/common/jsonSchemas/cmakeConfigSchema": {
             "cmake": "项目配置文件"
         },
-        "vs/kendryte/vs/base/common/jsonSchemas/flashSectionsSchema": {
+        "vs/hyseim/vs/base/common/jsonSchemas/flashSectionsSchema": {
             "flashManagerSchema": "闪存编辑器"
         },
-        "vs/kendryte/vs/base/common/menu/cmake": {
+        "vs/hyseim/vs/base/common/menu/cmake": {
             "and": "{0}和{1}",
             "build": "构建",
             "cleanup": "清理",
@@ -47,7 +47,7 @@
             "run": "运行",
             "show.log.cmake": "点击显示CMake日志"
         },
-        "vs/kendryte/vs/base/common/menu/openocd": {
+        "vs/hyseim/vs/base/common/menu/openocd": {
             "jtag": "JLink",
             "jtag.action.detect": "读取连接的JLink设备ID",
             "jtag.action.install": "安装官方JLink设备驱动",
@@ -57,143 +57,143 @@
             "openocd.action.start": "启动OpenOCD服务",
             "openocd.action.stop": "停止OpenOCD服务"
         },
-        "vs/kendryte/vs/base/common/menu/packageManager": {
+        "vs/hyseim/vs/base/common/menu/packageManager": {
             "DeleteDependency": "删除软件包",
             "InstallAllDependencies": "安装全部项目的依赖",
             "InstallProjectDependencies": "安装当前项目的依赖库",
             "openMarketPlace": "浏览线上软件包列表",
             "packageManager": "软件包管理"
         },
-        "vs/kendryte/vs/base/common/menu/processTool": {
+        "vs/hyseim/vs/base/common/menu/processTool": {
             "developerTools": "IDE调试工具",
             "openocd.action.quit-and-update": "退出并启动更新",
             "openocd.action.relaunch": "重新启动IDE",
             "openocd.action.report": "生成帮助数据",
             "reloadWindow": "重新加载窗口"
         },
-        "vs/kendryte/vs/base/common/menu/serialPort": {
+        "vs/hyseim/vs/base/common/menu/serialPort": {
             "and": "{0}和{1}",
-            "kendryte.serial-port.default": "点击选择刷写器默认串口设备",
+            "hyseim.serial-port.default": "点击选择刷写器默认串口设备",
             "reboot": "重新启动开发板",
             "reboot.to.ISP.mode": "重新启动开发板到ISP模式",
             "serialport": "串口",
             "upload": "刷写"
         },
-        "vs/kendryte/vs/base/common/menu/tools": {
+        "vs/hyseim/vs/base/common/menu/tools": {
             "CreateShortcuts": "创建快捷方式",
-            "KendryteIOEditor": "芯片引脚功能编辑器",
+            "HyseimIOEditor": "芯片引脚功能编辑器",
             "OpenDeviceManager": "打开设备管理器",
             "OpenFlashManager": "打开闪存编辑器",
             "OpenProjectSettings": "打开项目配置",
             "tools": "开发工具"
         },
-        "vs/kendryte/vs/base/common/menu/webLink": {
+        "vs/hyseim/vs/base/common/menu/webLink": {
             "openocd.action.weblink.document": "在浏览器中打开手册",
-            "openocd.action.weblink.forum": "在浏览器中打开勘智论坛",
+            "openocd.action.weblink.forum": "在浏览器中打开海芯论坛",
             "weblink": "外部链接"
         },
-        "vs/kendryte/vs/base/common/speedShow": {
-            "kendryte.download.message": "已完成{0}，速度：{2} {1}"
+        "vs/hyseim/vs/base/common/speedShow": {
+            "hyseim.download.message": "已完成{0}，速度：{2} {1}"
         },
-        "vs/kendryte/vs/base/electron-browser/rawClipboardAction": {
+        "vs/hyseim/vs/base/electron-browser/rawClipboardAction": {
             "copy": "复制到剪贴板"
         },
-        "vs/kendryte/vs/platform/fileDialog/common/configKeys": {
+        "vs/hyseim/vs/platform/fileDialog/common/configKeys": {
             "file-dialog.types.source": "源文件扩展名",
             "file-dialog.types.source.desc": "当使用添加文件按钮时，过滤显示的文件类型\n"
         },
-        "vs/kendryte/vs/platform/fileDialog/common/sourceFile": {
+        "vs/hyseim/vs/platform/fileDialog/common/sourceFile": {
             "sourceFilesType": "源文件"
         },
-        "vs/kendryte/vs/platform/menubar/electron-main/aboutMenuDialog": {
+        "vs/hyseim/vs/platform/menubar/electron-main/aboutMenuDialog": {
             "copy": "复制(&&C)",
-            "myAboutDetail": "版本: {0}\n勘智：{1}\n提交: {2}\n日期: {3}\nElectron: {4}\nChrome: {5}\nNode.js: {6}\nV8: {7}\nOS: {8}",
+            "myAboutDetail": "版本: {0}\n海芯：{1}\n提交: {2}\n日期: {3}\nElectron: {4}\nChrome: {5}\nNode.js: {6}\nV8: {7}\nOS: {8}",
             "okButton": "好"
         },
-        "vs/kendryte/vs/platform/open/common/actionIds": {
-            "kendryte.open": "打开",
-            "workbench.action.kendryte.open.terminal": "打开系统终端"
+        "vs/hyseim/vs/platform/open/common/actionIds": {
+            "hyseim.open": "打开",
+            "workbench.action.hyseim.open.terminal": "打开系统终端"
         },
-        "vs/kendryte/vs/platform/openocd/common/openocd": {
+        "vs/hyseim/vs/platform/openocd/common/openocd": {
             "custom": "自定义",
             "openocd.use.custom": "不使用IDE提供的配置文件，在下方“{0}”处提供你自己的配置",
             "openocd.use.ftdi": "使用FTDI接口",
             "openocd.use.jtag": "使用JLink接口"
         },
-        "vs/kendryte/vs/platform/serialPort/flasher/node/flasher": {
+        "vs/hyseim/vs/platform/serialPort/flasher/node/flasher": {
             "serial.flash.writing": "正在写Flash：{0}",
             "serial.memory.writing": "正在写内存：{0}"
         },
-        "vs/kendryte/vs/services/makefileService/common/type": {
+        "vs/hyseim/vs/services/makefileService/common/type": {
             "createMakefile": "创建CMakeLists.txt"
         },
-        "vs/kendryte/vs/services/makefileService/node/resolve": {
+        "vs/hyseim/vs/services/makefileService/node/resolve": {
             "loopDetected": "在项目{0}中发现循环依赖"
         },
-        "vs/kendryte/vs/services/openocd/electron-browser/actions/jtagBase": {
+        "vs/hyseim/vs/services/openocd/electron-browser/actions/jtagBase": {
             "detail": "显示更多",
             "leanHow": "如何安装JLink驱动",
             "never again": "不再提示"
         },
-        "vs/kendryte/vs/services/openocd/electron-browser/actions/jtagFindId": {
+        "vs/hyseim/vs/services/openocd/electron-browser/actions/jtagFindId": {
             "detail": "显示更多"
         },
-        "vs/kendryte/vs/services/serialPort/common/configContribution": {
+        "vs/hyseim/vs/services/serialPort/common/configContribution": {
             "serialport.config.filter-empty": "过滤空设备"
         },
-        "vs/kendryte/vs/services/serialPort/common/reloadAction": {
+        "vs/hyseim/vs/services/serialPort/common/reloadAction": {
             "serialport.reloadDevice.title": "刷新串口设备列表"
         },
-        "vs/kendryte/vs/services/workspace/common/actionId": {
+        "vs/hyseim/vs/services/workspace/common/actionId": {
             "selectProjectToBuild": "选择要使用的文件夹"
         },
-        "vs/kendryte/vs/services/workspace/electron-browser/selectProjectAction": {
+        "vs/hyseim/vs/services/workspace/electron-browser/selectProjectAction": {
             "executable": "可执行程序",
             "folder": "目录：{0}",
             "library": "库项目",
             "notProject": "不是一个项目",
             "selectFolder": "选择当前项目目录"
         },
-        "vs/kendryte/vs/workbench/actionRegistry/common/openDevToolsAction": {
+        "vs/hyseim/vs/workbench/actionRegistry/common/openDevToolsAction": {
             "openDevTools": "显示开发工具"
         },
-        "vs/kendryte/vs/workbench/bootstrap/common/kendryteBootstrap": {
-            "bootstrap.kendryte.fatal": "不好！勘智IDE启动过程中发生了错误：{0}"
+        "vs/hyseim/vs/workbench/bootstrap/common/hyseimBootstrap": {
+            "bootstrap.hyseim.fatal": "不好！海芯IDE启动过程中发生了错误：{0}"
         },
-        "vs/kendryte/vs/workbench/bottomBar/common/kendryteButtonContribution": {
+        "vs/hyseim/vs/workbench/bottomBar/common/hyseimButtonContribution": {
             "cmake": "CMake",
             "cmakeErrorUnknown": "点击查看CMake日志...",
             "cmakeNeedOpenFolder": "请打开文件夹",
             "cmakeNeedProject": "点击创建Hello World项目"
         },
-        "vs/kendryte/vs/workbench/cmake/common/actionIds": {
-            "kendryte.cmake.create.hello-world": "创建“Hello World”模板项目"
+        "vs/hyseim/vs/workbench/cmake/common/actionIds": {
+            "hyseim.cmake.create.hello-world": "创建“Hello World”模板项目"
         },
-        "vs/kendryte/vs/workbench/cmake/common/errors": {
-            "kendryte.errors.cmake.folder.not.open": "打开目录以开始一个项目",
-            "kendryte.errors.cmake.lists.txt.exists": "CMakeLists.txt将会被覆盖，请先删除它",
-            "kendryte.errors.cmake.project.invalid": "{0}文件中有错误",
-            "kendryte.errors.cmake.project.not.exists": "创建“{0}”文件来开始一个新项目"
+        "vs/hyseim/vs/workbench/cmake/common/errors": {
+            "hyseim.errors.cmake.folder.not.open": "打开目录以开始一个项目",
+            "hyseim.errors.cmake.lists.txt.exists": "CMakeLists.txt将会被覆盖，请先删除它",
+            "hyseim.errors.cmake.project.invalid": "{0}文件中有错误",
+            "hyseim.errors.cmake.project.not.exists": "创建“{0}”文件来开始一个新项目"
         },
-        "vs/kendryte/vs/workbench/cmake/common/launchConfig": {
+        "vs/hyseim/vs/workbench/cmake/common/launchConfig": {
             "workspace": "工作区"
         },
-        "vs/kendryte/vs/workbench/cmake/common/type": {
+        "vs/hyseim/vs/workbench/cmake/common/type": {
             "ErrorNotProject": "这不是一个项目"
         },
-        "vs/kendryte/vs/workbench/cmake/electron-browser/actions/openLocalCMakeList": {
+        "vs/hyseim/vs/workbench/cmake/electron-browser/actions/openLocalCMakeList": {
             "open": "打开{1}"
         },
-        "vs/kendryte/vs/workbench/cmake/electron-browser/actions/selectTargetAction": {
+        "vs/hyseim/vs/workbench/cmake/electron-browser/actions/selectTargetAction": {
             "SelectTarget": "选择目标"
         },
-        "vs/kendryte/vs/workbench/cmake/electron-browser/actions/selectVariantAction": {
+        "vs/hyseim/vs/workbench/cmake/electron-browser/actions/selectVariantAction": {
             "SelectVariant": "选择变体"
         },
-        "vs/kendryte/vs/workbench/cmake/electron-browser/cmakeContribution": {
+        "vs/hyseim/vs/workbench/cmake/electron-browser/cmakeContribution": {
             "hyseim": "海芯"
         },
-        "vs/kendryte/vs/workbench/cmake/electron-browser/cmakeService": {
+        "vs/hyseim/vs/workbench/cmake/electron-browser/cmakeService": {
             "errorBuildErrorCode": "编译失败，返回{0}",
             "errorCMakeCrash": "CMake进程异常退出",
             "errorCMakeExit": "CMake命令失败，返回{0}",
@@ -201,7 +201,7 @@
             "errorNoVariant": "变体{0}不存在",
             "pleaseConfigureProject": "请修复项目配置中的错误"
         },
-        "vs/kendryte/vs/workbench/flashManager/browser/flashManagerEditor": {
+        "vs/hyseim/vs/workbench/flashManager/browser/flashManagerEditor": {
             "addFile": "添加文件...",
             "createZip": "创建压缩包",
             "createZipDesc": "根据列表创建K-Flash包（.kfpkg）",
@@ -209,7 +209,7 @@
             "informationMessage": "{0}个文件，{1}数据，将写入闪存地址{2}到{3}",
             "uploadAll": "全部刷写"
         },
-        "vs/kendryte/vs/workbench/flashManager/browser/list": {
+        "vs/hyseim/vs/workbench/flashManager/browser/list": {
             "addressEndLabel": "结束地址：",
             "addressLabel": "起始地址：",
             "addressPlaceholder": "地址",
@@ -227,48 +227,48 @@
             "selectTitle": "选择要刷写的文件",
             "swapLabel": "交换大小端"
         },
-        "vs/kendryte/vs/workbench/flashManager/common/editorInput": {
+        "vs/hyseim/vs/workbench/flashManager/common/editorInput": {
             "editingFile": "正在编辑{0}",
             "fileNotExists": "无法读取文件：{0}",
             "fileSelect": "请为{0}选择文件",
             "filesMayLarge": "总大小超过{0}"
         },
-        "vs/kendryte/vs/workbench/flashManager/common/editorModel": {
+        "vs/hyseim/vs/workbench/flashManager/common/editorModel": {
             "fileNotFound": "文件未找到"
         },
-        "vs/kendryte/vs/workbench/flashManager/common/type": {
+        "vs/hyseim/vs/workbench/flashManager/common/type": {
             "createZip": "创建压缩包（带程序）",
             "flashManagerEditor": "闪存编辑器",
             "uploadAllFiles": "全部刷写"
         },
-        "vs/kendryte/vs/workbench/flashManager/electron-browser/flashManagerContribution": {
+        "vs/hyseim/vs/workbench/flashManager/electron-browser/flashManagerContribution": {
             "flashManager": "闪存编辑器"
         },
-        "vs/kendryte/vs/workbench/flashManager/node/createZipAction": {
+        "vs/hyseim/vs/workbench/flashManager/node/createZipAction": {
             "building": "正在构建程序...",
             "createZipFile": "正在创建压缩包...",
             "noSection": "没有文件需要刷写",
             "successCreateFile": "成功创建文件：{0}"
         },
-        "vs/kendryte/vs/workbench/flashManager/node/flashManagerService": {
+        "vs/hyseim/vs/workbench/flashManager/node/flashManagerService": {
             "cppErrorFlashManager": "闪存编辑器中存在错误，请先修复再编译"
         },
-        "vs/kendryte/vs/workbench/fpioaConfig/electron-browser/editor/contextMenu": {
-            "KendryteIOEditorSetPinFunc": "给选定的引脚赋予一个功能",
-            "KendryteIOEditorSetPinFuncShort": "赋予功能",
-            "KendryteIOEditorUnsetPinFunc": "默认"
+        "vs/hyseim/vs/workbench/fpioaConfig/electron-browser/editor/contextMenu": {
+            "HyseimIOEditorSetPinFunc": "给选定的引脚赋予一个功能",
+            "HyseimIOEditorSetPinFuncShort": "赋予功能",
+            "HyseimIOEditorUnsetPinFunc": "默认"
         },
-        "vs/kendryte/vs/workbench/fpioaConfig/electron-browser/editor/left/chipSelectView": {
+        "vs/hyseim/vs/workbench/fpioaConfig/electron-browser/editor/left/chipSelectView": {
             "alert": "警告",
             "chip.select.overwrite.alert": "当前的配置将丢失，真的要这么做吗？"
         },
-        "vs/kendryte/vs/workbench/fpioaConfig/electron-browser/editor/leftPanel": {
+        "vs/hyseim/vs/workbench/fpioaConfig/electron-browser/editor/leftPanel": {
             "settingsListLabel": "设置"
         },
-        "vs/kendryte/vs/workbench/fpioaConfig/electron-browser/fpioaContribution": {
+        "vs/hyseim/vs/workbench/fpioaConfig/electron-browser/fpioaContribution": {
             "fpioa.editor.label": "芯片引脚功能编辑器"
         },
-        "vs/kendryte/vs/workbench/fpioaConfig/electron-browser/fpioaEditorInput": {
+        "vs/hyseim/vs/workbench/fpioaConfig/electron-browser/fpioaEditorInput": {
             "alert": "警告",
             "cancel": "取消",
             "fpioaEditorInputName": "功能引脚配置",
@@ -277,93 +277,93 @@
             "pin": "引脚",
             "yes": "是"
         },
-        "vs/kendryte/vs/workbench/fpioaConfig/node/generateorContribution": {
-            "KendryteIOGenerate": "生成引脚功能配置代码"
+        "vs/hyseim/vs/workbench/fpioaConfig/node/generateorContribution": {
+            "HyseimIOGenerate": "生成引脚功能配置代码"
         },
-        "vs/kendryte/vs/workbench/jsonGUIEditor/editor/common/actionId": {
+        "vs/hyseim/vs/workbench/jsonGUIEditor/editor/common/actionId": {
             "editJson": "使用json编辑",
             "editUI": "使用图形界面"
         },
-        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/common/ids": {
-            "kendrytePackageJsonEditor": "项目配置"
+        "vs/hyseim/vs/workbench/hyseimPackageJsonEditor/common/ids": {
+            "hyseimPackageJsonEditor": "项目配置"
         },
-        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/fields/base": {
+        "vs/hyseim/vs/workbench/hyseimPackageJsonEditor/electron-browser/fields/base": {
             "add": "添加",
             "select": "选择"
         },
-        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/fields/folderList": {
+        "vs/hyseim/vs/workbench/hyseimPackageJsonEditor/electron-browser/fields/folderList": {
             "addFolder": "添加一个文件夹..."
         },
-        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/fields/singleFile": {
+        "vs/hyseim/vs/workbench/hyseimPackageJsonEditor/electron-browser/fields/singleFile": {
             "addFileSingle": "添加一个文件"
         },
-        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/fields/singleFolder": {
+        "vs/hyseim/vs/workbench/hyseimPackageJsonEditor/electron-browser/fields/singleFolder": {
             "addFolderSingle": "添加多个文件夹..."
         },
-        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/fields/sourceFileList": {
+        "vs/hyseim/vs/workbench/hyseimPackageJsonEditor/electron-browser/fields/sourceFileList": {
             "addFile": "添加文件",
             "addFileAll": "添加文件夹",
             "addFileTree": "添加文件夹（递归）",
             "addFileTreeDesc": "从指定文件夹递归添加所有文件"
         },
-        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/kendrytePackageJsonEditor": {
-            "kendrytePackageJsonEditor.c_cpp_flags.desc": "每行一个参数",
-            "kendrytePackageJsonEditor.c_cpp_flags.title": "C、C++编译器参数",
-            "kendrytePackageJsonEditor.c_flags.desc": "每行一个参数",
-            "kendrytePackageJsonEditor.c_flags.title": "C编译器参数",
-            "kendrytePackageJsonEditor.cpp_flags.desc": "每行一个参数",
-            "kendrytePackageJsonEditor.cpp_flags.title": "C++编译器参数",
-            "kendrytePackageJsonEditor.definitions.desc": "用户可配置的常量定义，用于在编译前生成`#define`",
-            "kendrytePackageJsonEditor.definitions.title": "C、C++常量定义",
-            "kendrytePackageJsonEditor.dependency.desc": "每行一个包",
-            "kendrytePackageJsonEditor.dependency.title": "项目依赖",
-            "kendrytePackageJsonEditor.entry.desc": "一般用在demo项目中，只作为标记，没有实际影响",
-            "kendrytePackageJsonEditor.entry.title": "入口文件",
-            "kendrytePackageJsonEditor.exampleSource.desc": "可以为你的库添加示例（示例时一个包含{0}的文件夹，并且它的项目类型是可执行程序）",
-            "kendrytePackageJsonEditor.exampleSource.title": "示例代码",
-            "kendrytePackageJsonEditor.extraList.desc": "这个文件将被添加到生成的CMakeLists中，注意：在这个文件中不可以使用编译目标，因为它此时还没有生成",
-            "kendrytePackageJsonEditor.extraList.placeholder": "正常情况下你不应该使用这个功能",
-            "kendrytePackageJsonEditor.extraList.title": "额外CMake脚本",
-            "kendrytePackageJsonEditor.header.desc": "你可以在你的代码中用`#include`包含这些目录中的头文件。每行一个目录。相对于{0}。",
-            "kendrytePackageJsonEditor.header.title": "本地头文件目录",
-            "kendrytePackageJsonEditor.homepage.desc": "这个项目的首页地址（例如github链接）",
-            "kendrytePackageJsonEditor.homepage.title": "首页",
-            "kendrytePackageJsonEditor.include.desc": "使用你的库的用户，可以在他们的代码中用`#include`包含这些目录中的头文件。每行一个目录，但是理应只有一个，不要将源文件放入此处的任何一个目录。",
-            "kendrytePackageJsonEditor.include.title": "导出头文件目录",
-            "kendrytePackageJsonEditor.ld_file.desc": "添加一个LD文件",
-            "kendrytePackageJsonEditor.ld_file.title": "LD文件",
-            "kendrytePackageJsonEditor.link_flags.desc": "每行一个参数",
-            "kendrytePackageJsonEditor.link_flags.title": "连接器参数",
-            "kendrytePackageJsonEditor.name.desc": "你的项目名称，只允许字母、数字、减号、下划线。如果需要对外发布，请用此格式：“你的名字+下划线+项目名称”。例如：kendryte_standalone-sdk",
-            "kendrytePackageJsonEditor.name.title": "项目名称",
-            "kendrytePackageJsonEditor.prebuilt.desc": "如果你的库不开源，则需要在此设置.a文件的路径",
-            "kendrytePackageJsonEditor.prebuilt.title": "预编译库项目",
-            "kendrytePackageJsonEditor.properties.desc": "请查询CMake手册以获取更多信息",
-            "kendrytePackageJsonEditor.properties.title": "CMake属性",
-            "kendrytePackageJsonEditor.source.desc": "在此处列出所有要编译的源码文件，每行一个文件、文件夹",
-            "kendrytePackageJsonEditor.source.placeholder": "path/to/code.c - 直接添加一个文件（推荐）\npath/*.c - 添加一个目录中的所有.c文件\npath/**.c - 添加一个目录和其子目录中所有.c文件",
-            "kendrytePackageJsonEditor.source.title": "源码文件",
-            "kendrytePackageJsonEditor.type.desc": "选择项目的类型。警告：改变此选项将清除下面的其他选项",
-            "kendrytePackageJsonEditor.type.title": "项目类型",
-            "kendrytePackageJsonEditor.version.desc": "发布时使用的版本号",
-            "kendrytePackageJsonEditor.version.title": "版本",
+        "vs/hyseim/vs/workbench/hyseimPackageJsonEditor/electron-browser/hyseimPackageJsonEditor": {
+            "hyseimPackageJsonEditor.c_cpp_flags.desc": "每行一个参数",
+            "hyseimPackageJsonEditor.c_cpp_flags.title": "C、C++编译器参数",
+            "hyseimPackageJsonEditor.c_flags.desc": "每行一个参数",
+            "hyseimPackageJsonEditor.c_flags.title": "C编译器参数",
+            "hyseimPackageJsonEditor.cpp_flags.desc": "每行一个参数",
+            "hyseimPackageJsonEditor.cpp_flags.title": "C++编译器参数",
+            "hyseimPackageJsonEditor.definitions.desc": "用户可配置的常量定义，用于在编译前生成`#define`",
+            "hyseimPackageJsonEditor.definitions.title": "C、C++常量定义",
+            "hyseimPackageJsonEditor.dependency.desc": "每行一个包",
+            "hyseimPackageJsonEditor.dependency.title": "项目依赖",
+            "hyseimPackageJsonEditor.entry.desc": "一般用在demo项目中，只作为标记，没有实际影响",
+            "hyseimPackageJsonEditor.entry.title": "入口文件",
+            "hyseimPackageJsonEditor.exampleSource.desc": "可以为你的库添加示例（示例时一个包含{0}的文件夹，并且它的项目类型是可执行程序）",
+            "hyseimPackageJsonEditor.exampleSource.title": "示例代码",
+            "hyseimPackageJsonEditor.extraList.desc": "这个文件将被添加到生成的CMakeLists中，注意：在这个文件中不可以使用编译目标，因为它此时还没有生成",
+            "hyseimPackageJsonEditor.extraList.placeholder": "正常情况下你不应该使用这个功能",
+            "hyseimPackageJsonEditor.extraList.title": "额外CMake脚本",
+            "hyseimPackageJsonEditor.header.desc": "你可以在你的代码中用`#include`包含这些目录中的头文件。每行一个目录。相对于{0}。",
+            "hyseimPackageJsonEditor.header.title": "本地头文件目录",
+            "hyseimPackageJsonEditor.homepage.desc": "这个项目的首页地址（例如github链接）",
+            "hyseimPackageJsonEditor.homepage.title": "首页",
+            "hyseimPackageJsonEditor.include.desc": "使用你的库的用户，可以在他们的代码中用`#include`包含这些目录中的头文件。每行一个目录，但是理应只有一个，不要将源文件放入此处的任何一个目录。",
+            "hyseimPackageJsonEditor.include.title": "导出头文件目录",
+            "hyseimPackageJsonEditor.ld_file.desc": "添加一个LD文件",
+            "hyseimPackageJsonEditor.ld_file.title": "LD文件",
+            "hyseimPackageJsonEditor.link_flags.desc": "每行一个参数",
+            "hyseimPackageJsonEditor.link_flags.title": "连接器参数",
+            "hyseimPackageJsonEditor.name.desc": "你的项目名称，只允许字母、数字、减号、下划线。如果需要对外发布，请用此格式：“你的名字+下划线+项目名称”。例如：hyseim_standalone-sdk",
+            "hyseimPackageJsonEditor.name.title": "项目名称",
+            "hyseimPackageJsonEditor.prebuilt.desc": "如果你的库不开源，则需要在此设置.a文件的路径",
+            "hyseimPackageJsonEditor.prebuilt.title": "预编译库项目",
+            "hyseimPackageJsonEditor.properties.desc": "请查询CMake手册以获取更多信息",
+            "hyseimPackageJsonEditor.properties.title": "CMake属性",
+            "hyseimPackageJsonEditor.source.desc": "在此处列出所有要编译的源码文件，每行一个文件、文件夹",
+            "hyseimPackageJsonEditor.source.placeholder": "path/to/code.c - 直接添加一个文件（推荐）\npath/*.c - 添加一个目录中的所有.c文件\npath/**.c - 添加一个目录和其子目录中所有.c文件",
+            "hyseimPackageJsonEditor.source.title": "源码文件",
+            "hyseimPackageJsonEditor.type.desc": "选择项目的类型。警告：改变此选项将清除下面的其他选项",
+            "hyseimPackageJsonEditor.type.title": "项目类型",
+            "hyseimPackageJsonEditor.version.desc": "发布时使用的版本号",
+            "hyseimPackageJsonEditor.version.title": "版本",
             "required": "必须"
         },
-        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/kendrytePackageJsonEditorInput": {
-            "kendrytePackageJson.editor.description.long": "修改{0}项目的CMake配置",
-            "kendrytePackageJson.editor.description.long_for": "修改当前项目的CMake配置",
-            "kendrytePackageJson.editor.description.medium": "当前项目配置",
-            "kendrytePackageJson.editor.description.medium_for": "{0}项目配置"
+        "vs/hyseim/vs/workbench/hyseimPackageJsonEditor/electron-browser/hyseimPackageJsonEditorInput": {
+            "hyseimPackageJson.editor.description.long": "修改{0}项目的CMake配置",
+            "hyseimPackageJson.editor.description.long_for": "修改当前项目的CMake配置",
+            "hyseimPackageJson.editor.description.medium": "当前项目配置",
+            "hyseimPackageJson.editor.description.medium_for": "{0}项目配置"
         },
-        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/openPackageJsonEditorAction": {
+        "vs/hyseim/vs/workbench/hyseimPackageJsonEditor/electron-browser/openPackageJsonEditorAction": {
             "workspace.required": "你必须打开一个目录才能使用这个功能"
         },
-        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/electron-browser/sectionFactory": {
+        "vs/hyseim/vs/workbench/hyseimPackageJsonEditor/electron-browser/sectionFactory": {
             "executable": "可执行程序",
             "library": "库项目",
             "prebuilt library": "预编译库项目"
         },
-        "vs/kendryte/vs/workbench/kendrytePackageJsonEditor/node/validators": {
+        "vs/hyseim/vs/workbench/hyseimPackageJsonEditor/node/validators": {
             "error.arg.list": "行无效：{0}。必须符合“{1}”的要求。",
             "error.empty": "这个项目是必须的",
             "error.file.invalid": "不是文件：{0}",
@@ -374,25 +374,25 @@
             "error.url.invalid": "首页无效，必须以http(s)://开头",
             "error.version.invalid": "版本号无效，必须符合格式：x.y.z[-aaa]"
         },
-        "vs/kendryte/vs/workbench/packageManager/browser/actions/displayPackageDetailAction": {
+        "vs/hyseim/vs/workbench/packageManager/browser/actions/displayPackageDetailAction": {
             "openurl.package.homepage": "首页"
         },
-        "vs/kendryte/vs/workbench/packageManager/browser/actions/installDependencyAction": {
+        "vs/hyseim/vs/workbench/packageManager/browser/actions/installDependencyAction": {
             "installFail": "安装失败：",
             "installSuccess": "所有项目依赖安装成功",
             "installSuccessProject": "当前项目依赖安装成功",
             "selectVersion": "选择要安装的版本"
         },
-        "vs/kendryte/vs/workbench/packageManager/browser/actions/openPackagesMarketPlaceAction": {
+        "vs/hyseim/vs/workbench/packageManager/browser/actions/openPackagesMarketPlaceAction": {
             "openMarketPlaceExample": "寻找一个示例"
         },
-        "vs/kendryte/vs/workbench/packageManager/browser/editors/packageBrowser": {
+        "vs/hyseim/vs/workbench/packageManager/browser/editors/packageBrowser": {
             "example": "示例",
             "library": "库",
             "packageManager.search": "搜索",
             "packages.browser": "软件包浏览器"
         },
-        "vs/kendryte/vs/workbench/packageManager/browser/editors/packageDetail": {
+        "vs/hyseim/vs/workbench/packageManager/browser/editors/packageDetail": {
             "InstallDependency": "安装",
             "ReinstallDependency": "重新安装",
             "local.package": "本地包",
@@ -402,41 +402,41 @@
             "open.homepage": "打开首页",
             "version": "版本号"
         },
-        "vs/kendryte/vs/workbench/packageManager/browser/editors/remotePackagesListView": {
+        "vs/hyseim/vs/workbench/packageManager/browser/editors/remotePackagesListView": {
             "detail": "详细信息",
             "download": "下载",
             "installing": "正在安装……",
             "selectVersion": "选择版本"
         },
-        "vs/kendryte/vs/workbench/packageManager/browser/viewletPanels/localPackagesListView": {
+        "vs/hyseim/vs/workbench/packageManager/browser/viewletPanels/localPackagesListView": {
             "detail": "详情",
             "packages": "软件包列表"
         },
-        "vs/kendryte/vs/workbench/packageManager/browser/viewletPanels/packageConfigView": {
+        "vs/hyseim/vs/workbench/packageManager/browser/viewletPanels/packageConfigView": {
             "dependency tree": "依赖信息",
             "leave.empty.to.use.default": "留空使用默认值"
         },
-        "vs/kendryte/vs/workbench/packageManager/browser/viewletPanels/register": {
+        "vs/hyseim/vs/workbench/packageManager/browser/viewletPanels/register": {
             "config": "配置",
             "package list": "软件包列表"
         },
-        "vs/kendryte/vs/workbench/packageManager/common/type": {
+        "vs/hyseim/vs/workbench/packageManager/common/type": {
             "packageManager": "软件包管理"
         },
-        "vs/kendryte/vs/workbench/packageManager/electron-browser/mainPanelContribution": {
+        "vs/hyseim/vs/workbench/packageManager/electron-browser/mainPanelContribution": {
             "package": "软件包",
             "packageManager": "软件包管理"
         },
-        "vs/kendryte/vs/workbench/serialMonitor/common/actionId": {
-            "kendryte.serial.terminal.toggle": "显示、隐藏串口监视器",
-            "kendryte.serial.terminal.toggle.left": "显示、隐藏左边栏：设备列表",
-            "kendryte.serial.terminal.toggle.right": "显示、隐藏右边栏：连接配置"
+        "vs/hyseim/vs/workbench/serialMonitor/common/actionId": {
+            "hyseim.serial.terminal.toggle": "显示、隐藏串口监视器",
+            "hyseim.serial.terminal.toggle.left": "显示、隐藏左边栏：设备列表",
+            "hyseim.serial.terminal.toggle.right": "显示、隐藏右边栏：连接配置"
         },
-        "vs/kendryte/vs/workbench/serialMonitor/common/configContribution": {
+        "vs/hyseim/vs/workbench/serialMonitor/common/configContribution": {
             "serialport.baudrate.monitor": "波特率",
             "serialport.baudrate.monitor.desc": "串口监视器默认使用的波特率"
         },
-        "vs/kendryte/vs/workbench/serialMonitor/common/schema": {
+        "vs/hyseim/vs/workbench/serialMonitor/common/schema": {
             "charset.binary": "Binary：设备输出是ANSI，原样显示",
             "charset.hex": "Hex：设备输出是二进制数据，显示为十六进制",
             "charset.hexasc": "HexAsc：设备输出是十六进制串，显示为二进制",
@@ -462,30 +462,30 @@
             "translateLineFeed.desc": "当收到这个字符（串）时，打印一个回车。",
             "translateLineFeed.title": "换行符翻译"
         },
-        "vs/kendryte/vs/workbench/serialMonitor/common/toggleSerialMonitorAction": {
+        "vs/hyseim/vs/workbench/serialMonitor/common/toggleSerialMonitorAction": {
             "serialport.togglePanel.title": "显示、隐藏串口监视器"
         },
-        "vs/kendryte/vs/workbench/serialMonitor/electron-browser/actions/acceptSerialInput": {
+        "vs/hyseim/vs/workbench/serialMonitor/electron-browser/actions/acceptSerialInput": {
             "actions.serial-port.acceptInput": "立即发送输入"
         },
-        "vs/kendryte/vs/workbench/serialMonitor/electron-browser/outputWindow": {
+        "vs/hyseim/vs/workbench/serialMonitor/electron-browser/outputWindow": {
             "terminal.integrated.copySelection.noSelection": "没有选择内容"
         },
-        "vs/kendryte/vs/workbench/serialMonitor/electron-browser/serialDeviceList": {
+        "vs/hyseim/vs/workbench/serialMonitor/electron-browser/serialDeviceList": {
             "settingsListLabel": "设置"
         },
-        "vs/kendryte/vs/workbench/serialMonitor/electron-browser/serialMonitorPanel": {
+        "vs/hyseim/vs/workbench/serialMonitor/electron-browser/serialMonitorPanel": {
             "press.ctrl.enter": "按 {0}+回车 发送数据",
             "reload_devices": "刷新设备列表",
             "serial-port.close": "关闭端口",
             "serial-port.open.raw": "打开端口（RAW模式）",
             "serial-port.open.termial": "打开端口（终端模式）"
         },
-        "vs/kendryte/vs/workbench/serialUpload/common/configContribution": {
+        "vs/hyseim/vs/workbench/serialUpload/common/configContribution": {
             "serialport.baudrate.flash": "刷写波特率",
             "serialport.baudrate.flash.desc": "刷写过程中使用的波特率"
         },
-        "vs/kendryte/vs/workbench/topMenu/node/shortcutsContribution": {
+        "vs/hyseim/vs/workbench/topMenu/node/shortcutsContribution": {
             "hyseim": "海芯"
         },
         "vs/platform/menubar/electron-main/menubar": {
@@ -496,9 +496,9 @@
             "mProject": "项目(&&P)",
             "mBuild": "构建(&&B)"
         },
-		"vs/workbench/contrib/extensions/browser/extensions.contribution": {
-			"extensions": "扩展"
-		},
+        "vs/workbench/contrib/extensions/browser/extensions.contribution": {
+            "extensions": "扩展"
+        },
         "vs/workbench/electron-browser/desktop.contribution": {
             "miSaveWorkspaceAs": "将工作区另存为..."
         }

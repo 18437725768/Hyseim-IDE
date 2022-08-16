@@ -79,7 +79,7 @@ import { ISharedProcessMainService, SharedProcessMainService } from 'vs/platform
 import { assign } from 'vs/base/common/objects';
 import { IDialogMainService, DialogMainService } from 'vs/platform/dialogs/electron-main/dialogs';
 import { withNullAsUndefined } from 'vs/base/common/types';
-import { _kendryte_main_hookInstantiationService } from 'vs/kendryte/vs/code/electron-main/createServices.injection';
+import { _hyseim_main_hookInstantiationService } from 'vs/hyseim/vs/code/electron-main/createServices.injection';
 
 export class CodeApplication extends Disposable {
 
@@ -494,7 +494,7 @@ export class CodeApplication extends Disposable {
 
 		const appInstantiationService = this.instantiationService.createChild(services);
 
-		_kendryte_main_hookInstantiationService(services, electronIpcServer, appInstantiationService);
+		_hyseim_main_hookInstantiationService(services, electronIpcServer, appInstantiationService);
 		return appInstantiationService;
 	}
 

@@ -1,1 +1,0 @@
-import 'vs/kendryte/vs/workbench/jsonGUIEditor/service/node/customJsonEditorService';

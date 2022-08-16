@@ -31,7 +31,7 @@ import { IFileService } from 'vs/platform/files/common/files';
 import { ITelemetryService } from 'vs/platform/telemetry/common/telemetry';
 import { IDialogMainService } from 'vs/platform/dialogs/electron-main/dialogs';
 import { mnemonicButtonLabel } from 'vs/base/common/labels';
-import { __kendryte_check_window_health } from 'vs/kendryte/vs/code/electron-main/checkHealth';
+import { __hyseim_check_window_health } from 'vs/hyseim/vs/code/electron-main/checkHealth';
 
 const RUN_TEXTMATE_IN_WORKER = false;
 
@@ -174,7 +174,7 @@ export class CodeWindow extends Disposable implements ICodeWindow {
 
 			// Create the browser window.
 			this._win = new BrowserWindow(options);
-			__kendryte_check_window_health(this._win, this.environmentService);
+			__hyseim_check_window_health(this._win, this.environmentService);
 			this._id = this._win.id;
 
 			if (isMacintosh && useCustomTitleStyle) {
